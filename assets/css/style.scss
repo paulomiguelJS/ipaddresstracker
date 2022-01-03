@@ -8,14 +8,23 @@
   text-decoration: none;
 }
 
+@import 'sass/colors';
+
 img {
   display: block;
+  max-width: 100%;
 }
-
-@import 'sass/_colors.scss';
-@import 'sass/spacing';
-@import 'sass/layout';
 
 .border {
   border: 1px solid red;
 }
+
+.container {
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@import 'sass/layout';
+
+@import 'sass/spacing';

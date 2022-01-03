@@ -9,6 +9,40 @@
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bgHeader {
+  width: 100%;
+  height: 30vh;
+  background-image: url(/assets/imgs/pattern-bg.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.containerIP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .s-0 {
@@ -614,9 +648,5 @@ img {
 .py-9 {
   padding-top: 128px;
   padding-bottom: 128px;
-}
-
-.border {
-  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,11 @@
           box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+.ipTitle {
+  color: #ffffff;
 }
 
 img {
@@ -20,29 +25,6 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.bgHeader {
-  width: 100%;
-  height: 30vh;
-  background-image: url(/assets/imgs/pattern-bg.png) no-repeat center center fixed;
-  background-size: cover;
-}
-
-.containerIP {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .s-0 {
@@ -648,5 +630,60 @@ img {
 .py-9 {
   padding-top: 128px;
   padding-bottom: 128px;
+}
+
+.bgHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background: url(/assets/imgs/pattern-bg.png) no-repeat center center;
+  background-size: cover;
+}
+
+.inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputContainer .ipInput {
+  width: 520px;
+  height: 55px;
+  padding-left: 16px;
+  font-size: 1rem;
+  color: #969696;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+  text-align: left;
+}
+
+.inputContainer .ipInput:focus {
+  border: none;
+  outline: none;
+}
+
+.inputContainer button {
+  padding: 0 24px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.inputContainer button:hover {
+  background-color: #3c3c3c;
 }
 /*# sourceMappingURL=style.css.map */

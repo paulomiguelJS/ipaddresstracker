@@ -643,8 +643,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
   width: 100%;
   height: 30vh;
+  min-height: 150px;
   background: url(/assets/imgs/pattern-bg.png) no-repeat center center;
   background-size: cover;
 }
@@ -660,7 +662,7 @@ img {
   height: 55px;
   padding-left: 16px;
   font-size: 1rem;
-  color: #969696;
+  color: #2c2c2c;
   border-radius: 1rem 0 0 1rem;
   border: none;
   text-align: left;
@@ -685,5 +687,33 @@ img {
 
 .inputContainer button:hover {
   background-color: #3c3c3c;
+}
+
+.infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+  width: 70%;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.infoContainer .infoList {
+  border-left: 1px solid #969696;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.map {
+  height: 100vh;
+  background: url(/assets/imgs/google-maps-tutorial.jpg) no-repeat center center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

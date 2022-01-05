@@ -643,10 +643,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
   width: 100%;
-  height: 30vh;
-  min-height: 150px;
+  height: 250px;
   background: url(/assets/imgs/pattern-bg.png) no-repeat center center;
   background-size: cover;
 }
@@ -658,7 +656,7 @@ img {
 }
 
 .inputContainer .ipInput {
-  width: 520px;
+  width: 480px;
   height: 55px;
   padding-left: 16px;
   font-size: 1rem;
@@ -678,6 +676,7 @@ img {
   background-color: #2b2b2b;
   color: #ffffff;
   font-weight: 700;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 0 1rem 1rem 0;
   border: none;
@@ -698,10 +697,9 @@ img {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: absolute;
-  bottom: -70px;
   width: 70%;
   padding: 2rem 0;
+  margin-top: 2.4rem;
   border-radius: 1rem;
   background-color: #ffffff;
 }

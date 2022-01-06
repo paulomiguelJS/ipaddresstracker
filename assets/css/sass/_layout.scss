@@ -5,8 +5,7 @@
 
   width: 100%;
   height: 250px;
-  background: url(/assets/imgs/pattern-bg.png) no-repeat center center;
-  background-size: cover;
+  background: url(/assets/imgs/pattern-bg.png) no-repeat center center / cover;
 }
 
 .inputContainer {
@@ -58,6 +57,8 @@
   align-items: center;
   justify-content: space-around;
 
+  z-index: 999;
+
   width: 70%;
   padding: 2rem 0;
 
@@ -74,9 +75,7 @@
   }
 }
 
-.map {
+#mapId {
   height: 100vh;
-
-  background: url(/assets/imgs/google-maps-tutorial.jpg) no-repeat center center;
-  background-size: cover;
+  width: 100vw;
 }

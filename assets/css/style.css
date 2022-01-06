@@ -645,8 +645,7 @@ img {
           flex-direction: column;
   width: 100%;
   height: 250px;
-  background: url(/assets/imgs/pattern-bg.png) no-repeat center center;
-  background-size: cover;
+  background: url(/assets/imgs/pattern-bg.png) no-repeat center center/cover;
 }
 
 .inputContainer {
@@ -697,6 +696,7 @@ img {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  z-index: 999;
   width: 70%;
   padding: 2rem 0;
   margin-top: 2.4rem;
@@ -709,9 +709,8 @@ img {
   padding: 1rem 0 1rem 2rem;
 }
 
-.map {
+#mapId {
   height: 100vh;
-  background: url(/assets/imgs/google-maps-tutorial.jpg) no-repeat center center;
-  background-size: cover;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,42 +14,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
 </head>
 
 <body>
   <header class="bgHeader ">
     <h1 class="ipTitle mt-3">IP Address Tracker</h1>
     <form class="mt-3 inputContainer">
-      <input class="ipInput" type="text" name="" id="" placeholder="Search for any IP address or domain">
-      <button>&#62;</button>
+      <input class="ipInput" type="text" name="" id="ipAddress" placeholder="Search for any IP address or domain">
+      <button id="searchBtn">&#62;</button>
     </form>
-    <main class="infoContainer  container">
+    <main class="infoContainer container">
       <div>
         <h2>IP ADDRESS</h2>
-        <p>102.324.313.131</p>
+        <p id="ip"></p>
       </div>
       <div class="infoList">
         <h2>LOCATION</h2>
-        <p>Brooklyn, NY 1001</p>
+        <p id="location"></p>
       </div>
       <div class="infoList">
         <h2>TIMEZONE</h2>
-        <p>UTC-05:00</p>
+        <p id="time"></p>
       </div>
       <div class="infoList">
         <h2>ISP</h2>
-        <p>SpaceX Starlink</p>
+        <p id="isp"></p>
       </div>
-    </main>
   </header>
-  <section class="map">
+  </main>
+  <section id="mapId">
   </section>
 
-  <!--<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.paulomiguel.dev/" target="_blank">Paulo Miguel</a>.
-    </div>-->
-
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   <script src="assets/js/app.js"></script>
 </body>
 

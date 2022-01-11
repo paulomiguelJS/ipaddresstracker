@@ -12,17 +12,18 @@
   display: flex;
 
   .ipInput {
+    
     width: 480px;
     height: 55px;
 
     padding-left: 16px;
+    
     font-size: 1rem;
     color: $lightGray;
 
     border-radius: 1rem 0 0 1rem;
     border: none;
 
-    text-align: left;
 
     &:focus {
       border: none;
@@ -79,3 +80,4 @@
   height: 100%;
   width: 100%;
 }
+

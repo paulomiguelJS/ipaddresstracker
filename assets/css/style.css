@@ -662,7 +662,6 @@ img {
   color: #2c2c2c;
   border-radius: 1rem 0 0 1rem;
   border: none;
-  text-align: left;
 }
 
 .inputContainer .ipInput:focus {
@@ -710,7 +709,34 @@ img {
 }
 
 #mapId {
-  height: 650px;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .inputContainer {
+    max-width: 350px;
+    font-size: 0.5rem;
+  }
+  .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .infoContainer .infoListNo {
+    padding: 1rem 0;
+  }
+  .infoContainer .infoList {
+    border-left: none;
+    padding: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

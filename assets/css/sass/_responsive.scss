@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 960px) {
+    .inputContainer {
+        max-width: 350px;
+
+        font-size: 0.5rem;
+    }  
+
+    .infoContainer {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+
+        
+       .infoListNo {
+           padding: 1rem 0;
+       } 
+       
+        .infoList {
+            border-left: none;
+            padding: 1rem 0;
+          }
+    }
+
+}
+
+

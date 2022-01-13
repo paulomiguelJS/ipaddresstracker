@@ -1,13 +1,18 @@
 const apiKey = 'at_mThjThVI886MAVVj7geCt2R0MJw7o';
 const apiUri = 'https://geo.ipify.org/api/v1';
 
+//form
+
 let searchIp = document.getElementById('ip');
 let searchLocation = document.getElementById('location');
 let searchTime = document.getElementById('time');
 let searchIsp = document.getElementById('isp');
 
-const handleInput = document.getElementById('ipAddress').value;
-const handleSubmit = document.getElementById('ipAddress');
+
+//input
+
+const handleInput = document.getElementById('ipAddress');
+const handleSubmit = document.getElementById('searchBtn');
 
 
 const map = L.map('map').setView([34.505, 100.43], 13);
@@ -37,8 +42,8 @@ getIpDetails = (defaultIp) => {
     var ipUrl = `${apiUri}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
   }
   fetch(ipUrl)
-    .then((results) => results.json())
-    .then((data) => {
+    .then( results => results.json())
+    .then( data => {
       searchIp.innerHTML = data.ip;
       searchLocation.innerHTML = `${data.location.city} ${data.location.country} ${data.location.postalCode}`;
       searchTime.innerHTML = data.location.timezone;
@@ -54,7 +59,7 @@ getIpDetails = (defaultIp) => {
 
 document.addEventListener('load', updateMarker());
 
-searchBtn.addEventListener('click', (e) => {
+handleSubmit.addEventListener('click', e => {
   e.preventDefault();
   if (handleInput.value != '' || handleInput != null) {
     getIpDetails(handleInput.value);
@@ -62,6 +67,6 @@ searchBtn.addEventListener('click', (e) => {
     return;
   }
  
-  alert('Please, enter a valide IP')
+  alert('Please, enter a valid IP address')
  
 });

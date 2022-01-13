@@ -708,6 +708,14 @@ img {
   padding: 1rem 0 1rem 2rem;
 }
 
+.infoContainer .infoListNo p {
+  margin-top: 1rem;
+}
+
+.infoContainer .infoList p {
+  margin-top: 1rem;
+}
+
 #map {
   height: 100vh;
   width: 100%;

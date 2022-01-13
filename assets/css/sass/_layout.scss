@@ -11,6 +11,8 @@
 .inputContainer {
   display: flex;
 
+ 
+
   .ipInput {
     
     width: 480px;
@@ -73,6 +75,14 @@
     border-left: 1px solid $DarkGray;
 
     padding: 1rem 0 1rem 2rem;
+  }
+
+  .infoListNo p {
+    margin-top: 1rem;
+  }
+
+  .infoList p {
+    margin-top: 1rem;
   }
 }
 

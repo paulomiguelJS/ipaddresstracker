@@ -9,13 +9,8 @@ let searchIsp = document.getElementById('isp');
 const handleInput = document.getElementById('ipAddress').value;
 const handleSubmit = document.getElementById('ipAddress');
 
-const headersOption = {
-  headers: {
-    'Access-Control-Allow-Origin': '*',
-  },
-};
 
-const map = L.map('mapId').setView([51.505, -0.09], 13);
+const map = L.map('map').setView([34.505, 100.43], 13);
 L.tileLayer(
   'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
   {
@@ -61,9 +56,12 @@ document.addEventListener('load', updateMarker());
 
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (handleInput.value != '' && handleInput != null) {
+  if (handleInput.value != '' || handleInput != null) {
     getIpDetails(handleInput.value);
 
     return;
   }
+ 
+  alert('Please, enter a valide IP')
+ 
 });

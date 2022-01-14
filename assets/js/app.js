@@ -1,19 +1,13 @@
 const apiKey = 'at_mThjThVI886MAVVj7geCt2R0MJw7o';
 const apiUri = 'https://geo.ipify.org/api/v1';
 
-//form
-
 let searchIp = document.getElementById('ip');
 let searchLocation = document.getElementById('location');
 let searchTime = document.getElementById('time');
 let searchIsp = document.getElementById('isp');
 
-
-//input
-
 const handleInput = document.getElementById('ipAddress');
 const handleSubmit = document.getElementById('searchBtn');
-
 
 const map = L.map('map').setView([34.505, 100.43], 13);
 L.tileLayer(
@@ -35,12 +29,15 @@ updateMarker = (updateMarker = [40.73061, -73.935242]) => {
   L.marker(updateMarker).addTo(map);
 };
 
+let ipUrl;
+
 getIpDetails = (defaultIp) => {
   if (defaultIp == undefined) {
-    var ipUrl = `${apiUri}?apiKey=${apiKey}`;
+     ipUrl = `${apiUri}?apiKey=${apiKey}`;
   } else {
-    var ipUrl = `${apiUri}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
+   ipUrl = `${apiUri}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
   }
+
   fetch(ipUrl)
     .then( results => results.json())
     .then( data => {
@@ -66,7 +63,5 @@ handleSubmit.addEventListener('click', e => {
 
     return;
   }
- 
   alert('Please, enter a valid IP address')
- 
 });

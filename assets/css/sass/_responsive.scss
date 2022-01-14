@@ -21,9 +21,33 @@
 
     .infoList {
             border-left: none;
-            padding: 1rem 0;
+            padding: 0.7rem 0;
           }
     }
+
+    .infoListNo {
+        h2 {
+          color: $DarkGray;
+          font-size: 0.9rem;
+        }
+        p {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+      
+      .infoList {
+        h2 {
+            color: $DarkGray;
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+      }
+
+    
 
 }
 

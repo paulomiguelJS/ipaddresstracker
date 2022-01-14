@@ -12,6 +12,26 @@
   color: #ffffff;
 }
 
+.infoListNo h2 {
+  color: #969696;
+  font-size: 1rem;
+}
+
+.infoListNo p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.infoList h2 {
+  color: #969696;
+  font-size: 1rem;
+}
+
+.infoList p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -745,7 +765,23 @@ img {
   }
   .infoContainer .infoList {
     border-left: none;
-    padding: 1rem 0;
+    padding: 0.7rem 0;
+  }
+  .infoListNo h2 {
+    color: #969696;
+    font-size: 0.9rem;
+  }
+  .infoListNo p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .infoList h2 {
+    color: #969696;
+    font-size: 0.9rem;
+  }
+  .infoList p {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=style.css.map */

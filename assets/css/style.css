@@ -10,11 +10,12 @@
 
 .ipTitle {
   color: #ffffff;
+  font-weight: 400;
 }
 
 .infoListNo h2 {
   color: #969696;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .infoListNo p {
@@ -24,7 +25,7 @@
 
 .infoList h2 {
   color: #969696;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .infoList p {

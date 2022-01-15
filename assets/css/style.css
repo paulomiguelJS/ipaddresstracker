@@ -10,7 +10,7 @@
 
 .ipTitle {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .infoListNo h2 {
@@ -717,7 +717,7 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   z-index: 999;
-  width: 70%;
+  width: 100%;
   padding: 2rem 0;
   margin-top: 2.4rem;
   border-radius: 1rem;
@@ -758,8 +758,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 60%;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
   }
   .infoContainer .infoListNo {
     padding: 1rem 0;

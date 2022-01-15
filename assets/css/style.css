@@ -16,6 +16,7 @@
 .infoListNo h2 {
   color: #969696;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 .infoListNo p {
@@ -26,6 +27,7 @@
 .infoList h2 {
   color: #969696;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 .infoList p {
@@ -719,7 +721,7 @@ img {
   z-index: 999;
   width: 80%;
   padding: 2rem 0;
-  margin-top: 3rem;
+  margin-top: 3.6rem;
   border-radius: 1rem;
   background-color: #ffffff;
 }

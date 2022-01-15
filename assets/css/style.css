@@ -665,7 +665,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 250px;
+  height: 280px;
   background: url(/assets/imgs/pattern-bg.png) no-repeat center center/cover;
 }
 
@@ -719,7 +719,7 @@ img {
   z-index: 999;
   width: 100%;
   padding: 2rem 0;
-  margin-top: 2.4rem;
+  margin-top: 3rem;
   border-radius: 1rem;
   background-color: #ffffff;
 }

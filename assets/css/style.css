@@ -760,7 +760,7 @@ img {
             justify-content: center;
     width: 60%;
     text-align: center;
-    padding: 1rem;
+    padding: 0;
   }
   .infoContainer .infoListNo {
     padding: 1rem 0;

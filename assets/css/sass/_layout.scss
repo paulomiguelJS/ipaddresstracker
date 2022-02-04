@@ -84,8 +84,9 @@
   }
 }
 
-#map {
-  height: 100vh;
+.map {
+  display: block;
+  height: calc(100vh - 280px);
   width: 100%;
 }
 
